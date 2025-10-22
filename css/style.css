@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Fira Sans"; /* Nome que você usará no CSS */
+  src: url("../Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+  font-weight: 400; /* Diz ao navegador que este arquivo é o "normal" */
+  font-style: normal;
+  font-display: swap; /* Boa prática de performance */
+}
+
+@font-face {
+  font-family: "Fira Sans"; /* Deve ser o MESMO NOME da fonte regular */
+  src: url("../Fira_Sans/FiraSans-Bold.ttf") format("truetype");
+  font-weight: 700; /* Diz ao navegador que este arquivo é o "bold" */
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --c1: #f5f5f5;
+  --c2: #f0f0f0;
+  --c3: #e0e0e0;
+  --c4: #cccccc;
+  --c5: #b8b8b8;
+  --c6: #a3a3a3;
+  --c7: #8f8f8f;
+  --c8: #7a7a7a;
+  --c9: #666666;
+  --c10: #525252;
+  --c11: #3d3d3d;
+  --c12: #292929;
+  --c13: #141414;
+  --gradiente-v1: #b6f829;
+  --gradiente-v2: #67dd0a;
+  --g2-1: #b629f8;
+  --g2-2: #800add;
+}
+
+/* <!-------------- Configurações Menu --------------->*/
+header {
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 30px auto 60px auto;
+}
+
+header,
+.menu {
+  display: flex;
+}
+
+.menu {
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--c13);
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* <!-------------- Configurações Introdução --------------->*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+article > .foto-perfil {
+  max-width: 300px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+article > .detalhe {
+  /* DETALHE TITULO */
+  width: 100px;
+  position: absolute;
+  z-index: -1;
+  top: 80px;
+  left: 350px;
+}
+
+.introducao > .titulo-intro {
+  font-size: 4rem;
+  color: var(--c13);
+}
+
+.titulo-intro,
+.paragrafo-intro {
+  margin-left: 5rem;
+}
+.paragrafo-intro {
+  color: var(--c10);
+}
+
+.titulo-intro .introducao > p {
+  font-size: 1.5rem;
+}
+
+/* <!-------------- Configurações Experiência --------------->*/
