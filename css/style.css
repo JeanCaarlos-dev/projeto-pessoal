@@ -109,3 +109,121 @@ article > .detalhe {
 }
 
 /* <!-------------- Configurações Experiência --------------->*/
+main > .corpo-part2 {
+  margin-top: 5rem;
+  margin-bottom: 30px;
+  align-items: start;
+}
+
+.titulo-exp {
+  color: var(--c3);
+  font-weight: 700;
+  font-size: 10rem;
+  text-transform: uppercase;
+  line-height: 160px;
+  padding: 1.25rem 0.62rem;
+  margin-right: 10rem;
+}
+
+.exp-info > p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  max-width: 570px;
+  color: var(--c10);
+  padding: 2.1rem 0;
+}
+.exp-info > p > strong {
+  color: var(--c13);
+}
+
+/* <!-------------- Expêriencias-card --------------->*/
+.card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--c1);
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card:before {
+  /* DETALHE */
+  content: "";
+  width: 6px;
+  height: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--gradiente-v1),
+    var(--gradiente-v2)
+  );
+  position: absolute;
+  top: 15px;
+  left: -5px;
+}
+
+.sub-titulo {
+  position: relative;
+}
+.card .sub-titulo.bik::before {
+  content: "2045";
+  left: -90px;
+}
+.card .sub-titulo.surf::before {
+  content: "2044-45";
+  left: -113px;
+}
+.card .sub-titulo.brafe::before {
+  content: "2044";
+  left: -90px;
+}
+.card .sub-titulo:before {
+  /* DETALHES ANO */
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--c10);
+  position: absolute;
+  top: 3px;
+}
+
+.card > .bikcraft-stacks {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.card > p {
+  align-self: center;
+  color: var(--c10);
+  margin-right: 20px;
+}
+
+.card-surfbot > p {
+  padding: 15px 0;
+}
+
+.bikcraft-stacks > p {
+  display: block;
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
+  gap: 20px;
+  height: 20px;
+}
+
+/* <!-------------- Configurações Formação --------------->*/
+.corpo-part3 {
+  background-color: var(--c13);
+}
+
+.titulo-form {
+  color: #000000;
+  font-weight: 700;
+  font-size: 10rem;
+  text-transform: uppercase;
+  line-height: 160px;
+  padding: 1.25rem 0.62rem;
+  margin-right: 10rem;
+}
