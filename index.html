@@ -4,88 +4,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto-Lobo</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="Desenvolvedor Front End e UX/UI Designer Localizado no Brasilia/DF">
+  <title>Projeto Lobo</title>
+  <link rel=" stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <img src="./img/marca.svg" alt="icone titulo logo">
+  <header class="header">
+    <img src="./img/marca.svg" alt="logo" srcset="" class="header-logo" width="104" height="38">
     <nav>
-      <ul class="menu">
-        <li><a href="">Experiência</a></li>
-        <li><a href="">Formação</a></li>
-        <li><a href="">Contato</a></li>
+      <ul class="header-menu">
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <article class="corpo-part1">
-      <img src="./img/detalhe.svg" alt="" srcset="" class="detalhe">
-      <img src="./img/perfil.jpg" alt="foto perfil" class="foto-perfil">
-      <div class="introducao">
-        <h1 class="titulo-intro">Desenvolvedor<br>Font End &<br>UX/UI Designer</h1>
-        <p class="paragrafo-intro">Localizado em Brasilia/DF &#127968;</p>
-      </div>
-    </article>
-
-    <article class="corpo-part2">
-      <h2 class="titulo-exp">Expe<br>riên<br>cia</h2>
-      <aside class="exp-info">
-        <p>Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
-
-        <div class="card card-bikcraft">
-          <h3 class="sub-titulo bik">Bikcraft</h3>
-          <h3>Desenvolvedor Júnior</h3>
-          <p>Desenvolvo pequenos projetos como Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-          <div class="bikcraft-stacks">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>UX Design</p>
-            <p>UI Desgin</p>
-          </div>
-        </div>
-
-        <div class="card card-surfbot">
-          <h3 class="sub-titulo surf">Surfbot</h3>
-          <h3>Estagiário</h3>
-          <p>Desenvolvo pequenos projetos como Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-          <div class="bikcraft-stacks">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-          </div>
-        </div>
-
-        <div class="card card-brafe">
-          <h3 class="sub-titulo brafe">Brafé</h3>
-          <h3>Voluntário</h3>
-          <p>Desenvolvo pequenos projetos como Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-          <div class="bikcraft-stacks">
-            <p>Email Marketing</p>
-            <p>HTML</p>
-            <p>UX Design</p>
-            <p>UI Desgin</p>
-          </div>
-        </div>
-      </aside>
-    </article>
-
-    <article class="corpo-part3">
-      <h2 class="titulo-form">form<br> ação</h2>
-      <aside>
-        <p>Minha mais recente experiência acadêmica foi mestrado&#127891; que fiz no exterior em UX Design. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
-        <div class="formacao1">
-          <p>bacharel</p>
-          <h4>Admininstração de Empresas</h4>
-          <p>ufrrj</p>
-        </div>
-      </aside>
-    </article>
-
+  <main class="introducao">
+    <img src="./img/perfil.jpg" alt="Lobo Cinza" srcset="" width="360" height="520">
+    <div>
+      <h1>Desenvolvedor<br>Front End &<br>UX/UI Designer</h1>
+      <p>Localizado no Brasilia/DF 🏠</p>
+    </div>
   </main>
+
+  <section class="experiencia" id="experiencia" aria-label="Experiência">
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+
+      <div class="empresa">
+        <span class="empresa-ano">2045</span>
+        <h3 class="empresa-titulo">Bikcraft</h3>
+        <span class="empresa-titulo">Desenvolvedor Júnior</span>
+        <p class="empresa-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+
+      <div class="empresa">
+        <span class="empresa-ano">2044-45</span>
+        <h3 class="empresa-titulo">Surfbot</h3>
+        <span class="empresa-titulo">Estagiário</span>
+        <p class="empresa-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="empresa">
+        <span class="empresa-ano">2044</span>
+        <h3 class="empresa-titulo">Brafé</h3>
+        <span class="empresa-titulo">Voluntário</span>
+        <p class="empresa-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
+        <ul class="empresa-habilidades">
+          <li>Email Marketing</li>
+          <li>HTML</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+
+      <div>
+        <p class="formacao-texto">
+          Minha mais recente experiência acadêmica foi o <strong>mestrado</strong> 🎓 que fiz no exterior em <strong>UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
+        </p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Bacharel</span>
+            <h3 class="faculdade-curso">Administração de Empresas</h3>
+            <span class="faculdade-instituicao">UFRRJ</span>
+          </li>
+
+          <li class="faculdade">
+            <span class="faculdade-tipo">Tecnólogo</span>
+            <h3 class="faculdade-curso">Design Digital</h3>
+            <span class="faculdade-instituicao">Infnet</span>
+          </li>
+
+          <li class="faculdade">
+            <span class="faculdade-tipo">Mestre</span>
+            <h3 class="faculdade-curso">User Experience Design</h3>
+            <span class="faculdade-instituicao">UCLL</span>
+          </li>
+        </ul>
+
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li>UX Design & UI Design <span>56h</span></li>
+              <li>Front End para Iniciantes <span>72h</span></li>
+            </ul>
+          </div>
+
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>/ Fluente</span></li>
+              <li>Espanhol <span>/ Intermediário</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
+      <ul class="footer-contato">
+        <li>lobo@gmail.com</li>
+        <li>+55 61 9999-9999</li>
+        <li><a href="/">@instagram</a></li>
+      </ul>
+      <p class="footer-copy">Lobo. Alguns direiros reservados.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
